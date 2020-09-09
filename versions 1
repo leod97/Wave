@@ -1,0 +1,10 @@
+def wave(people):
+    if people=='':
+        return []
+    else:
+        L=[]
+        for i in range (len(people)):
+            if people[i]!=' ':
+                word=people[:i].lower() + people[i:].capitalize()
+                L.append(word)
+        return L  
